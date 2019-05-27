@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Canvas</title>
+    </head>
+    <body>
+    	<h1>Canvas</h1>
+
+        <h3>Rectangulo</h3>
+    		<canvas id="rectangulo" ></canvas>
+
+        <h3>Cuadrado</h3>
+            <canvas id="cuadrado" ></canvas>
+
+        <h3>circulo</h3>
+            <canvas id="circulo" ></canvas>
+
+        <h3>triangulo</h3>
+            <canvas id="triangulo" ></canvas>
+
+        <h3>corazon</h3>
+            <canvas id="corazon" ></canvas>
+
+        <h3>texto</h3>
+            <canvas id="texto" ></canvas>
+
+
+
+
+            <script>
+                var rectangulo = document.getElementById('rectangulo');
+                var cuadrado = document.getElementById('cuadrado');
+                var circulo    = document.getElementById('circulo')
+                var triangulo  = document.getElementsById('triangulo');
+                var corazon    = document.getElementById('corazon');
+                var texto      = document.getElementById('texto');
+
+              
+                var ctx1 = cuadrado.getContext('2d');
+                ctx1.fillStyle= '#a00';
+                ctx1.fillRect(0,0,100,100);
+                //cuadrado
+
+                var ctx2 = rectangulo.getContext('2d'); 
+                ctx2.fillStyle= '#a00';
+                ctx2.fillRect(0,0,200,100);
+                //rectangulo
+
+                var ctx3 = circulo.getContext('2d');
+                ctx3.fillStyle= '#a00';
+                ctx3.beginPath()
+                ctx3.arc(60,60,60,0, Math.PI*2, true)
+                ctx3.closePath()
+                ctx3.fill()
+                //circulo
+
+
+                var ctx4 = triangulo.getContext('2d'); 
+                ctx4.fillStyle= '#a00';
+                ctx4.beginPath()
+                ctx4.moveTo(10, 110);
+                ctx4.lineTo(110, 10);
+                ctx4.lineTo(210, 110)
+                ctx4.fill()
+                //triangulo
+
+                var ctx5 = corazon.getContext('2d');
+                ctx5.beginPath();
+                ctx5.moveTo(75,40);
+                ctx5.bezierCuerverTo(75,37,70,25,50,25);
+                ctx5.bezierCuerverTo(20,25,20,62.5,20,62.5);
+                ctx5.bezierCuerverTo(20,80,40,102,75,120);
+                ctx5.bezierCuerverTo(110,102,130,80,130,62.5);
+                ctx5.bezierCuerverTo(130,62.5,130,25,100,25);
+                ctx5.bezierCuerverTo(85,25,75,37,75,40);
+                ctx5.fill();
+                 //corazon
+
+
+                var ctx6 = texto.getContext('2d');  
+                ctx6.fillStyle= '#a00';
+                ctx6.font = "40px Tahoma";
+                ctx6.filltext("ADSI 1835271", 0, 80)
+
+                //texto
+
+
+         
+
+              
+            </script>
+    </body>
+</html>

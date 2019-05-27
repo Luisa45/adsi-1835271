@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>formulario</title>
+</head>
+	<body>
+	<h1>formularios</h1>
+	<form action="" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<div>
+			<label for="nombre">Nombre completo</label>
+		<input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+        <label for="clave">Contraseña</label>
+		<input type="password" id="clave" name="clave">	
+        </div>
+        <div>
+        <label for="foto">Foto</label>
+		<input type="fila" id="foto" name="seleccione archivo">	
+        </div>
+        <div> 
+        	<label for="genero">Genero</label>
+        	<select name="genero" id="genero">
+        		<option value="">Seleccione genero</option>
+        		<option value="F">Femenino</option>
+        		<option value="M">Masculino</option>
+        	</select>
+        </div>
+        <div>
+        	<label for="Descripcion">Descripcion:</label>
+        	<br>
+        	<textarea name="Descripcion" id="Descripcion" cols="30" rows="5"></textarea>
+        </div>
+
+
+		</fieldset>
+		<fieldset>
+		   <legend>Datos SENA</legend>
+		   <input type="hidden" name="centro" value="CPIC">
+		   <div>
+		   	Seleccione uno o mas modulos:
+		   	<br>
+             <label>
+		   		<input type="checkbox" name="Modulo">
+		   		Analisis
+		   	</label>
+		   	<br>
+		   	 	<label>
+		   		<input type="checkbox" name="Modulo">
+		   		Desarrollo
+		   	</label>
+		   	<br>
+		   	 	<label>
+		   		<input type="checkbox" name="Modulo">
+		   		Comunicacion
+		   	</label>
+		   	<br>
+		   		<input type="checkbox" name="Modulo">
+		   		Ambiental
+		   	</label>
+		   	<br>
+              </div>
+              <div>
+              	Seleccione la Titulacion:
+              	<br>
+              	<label>
+              		<input type="radio" name="Titulacion">
+              		ADSI
+              	</label>
+              	<br>
+              	<label>
+              		<input type="radio" name="Titulacion">
+              		Electricidad industrial
+              	</label>
+              	<br>
+              	<label>
+              		<input type="radio" name="Titulacion">
+              		Soldadura
+              	</label>
+              	<br>
+              	<label>
+              		<input type="radio" name="Titulacion">
+              		Automotriz
+              	</label>
+              	<br>
+              </div>
+		</fieldset>	
+		<input type="submit" value="Enviar Formulario">	
+		<input type="reset" value="Limpiar Formulario">				
+	</form>
+	</body>
+	</html>
