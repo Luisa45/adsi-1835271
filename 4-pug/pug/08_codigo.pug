@@ -1,0 +1,19 @@
+doctype
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Codigo
+body
+	h1 Codigo (for/each)
+	- var colores = ['purple', 'aqua', 'teal', 'lime']
+	ul
+		li
+			each color in colores
+				li(style={color: color})= color
+
+		table(border=1)
+			- for(var i = 1; i <= 10; i++)
+				tr
+					- for(var j = 1; j <= 20; j++)
+						td f#{i} c#{j}
+	

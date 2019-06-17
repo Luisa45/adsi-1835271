@@ -1,0 +1,20 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Atributos (Estilos)
+	body
+		//Estilos en los atributos
+		h1(style={
+					background: 'black',
+					color: 'white',
+					padding: '20px' }) Atributos (Estilo)
+		//Atributos Booleanos
+		label(for='enclase')
+			span Usted esta en clase?
+			input(type='checkbox' checked=true id='enclase')
+		//Variables en los atributos
+		- var colores = ['yellow', 'blue', 'red']
+		a(class=colores) Colombia
+
+	

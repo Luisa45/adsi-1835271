@@ -1,0 +1,18 @@
+doctype
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Casos
+body
+	h1 Casos
+	- var seguidores = 2
+	case seguidores
+		when 0
+		when 60
+		when 120
+			p Usted tiene muy pocos seguidores
+		when 2
+			p Usted tiene #(seguidores) seguidores
+		default
+			p Usted tiene muchos seguidores
+	
